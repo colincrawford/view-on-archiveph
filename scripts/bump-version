@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Bump patch version (1.0.0 → 1.0.1)
+jq '.version |= (split(".") | .[-1] = ((.[-1] | tonumber) + 1 | tostring) | join("."))' manifest.json > tmp.json && mv tmp.json manifest.json
+

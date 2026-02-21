@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./scripts/bump-version
+./scripts/package

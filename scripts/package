@@ -1,0 +1,3 @@
+#!/bin/bash
+
+zip -r view-on-archiveph.zip manifest.json background.js icons/
